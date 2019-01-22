@@ -1,4 +1,4 @@
-package com.robert.redis.redic;
+package com.ten.ware.redis.router;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,6 +7,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 
+import com.ten.ware.redis.router.excep.NotSupportedException;
+import com.ten.ware.redis.router.strategy.HashShardingStrategy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
@@ -26,9 +28,7 @@ import redis.clients.jedis.ZParams;
 import redis.clients.util.Pool;
 import redis.clients.util.Slowlog;
 
-import com.robert.redis.redic.excep.NotSupportedException;
-import com.robert.redis.redic.strategy.HashShardingStrategy;
-import com.robert.redis.redic.strategy.ShardingStrategy;
+import com.ten.ware.redis.router.strategy.ShardingStrategy;
 
 public class Redic extends Jedis {
 	protected final Logger log = LoggerFactory.getLogger(Redic.class);

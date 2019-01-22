@@ -1,14 +1,14 @@
-package com.robert.redis.redic;
+package com.ten.ware.redis.router;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import com.ten.ware.redis.router.strategy.SelectStrategy;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 
 import redis.clients.jedis.JedisPool;
 
-import com.robert.redis.redic.strategy.RoundRobinSelectStrategy;
-import com.robert.redis.redic.strategy.SelectStrategy;
+import com.ten.ware.redis.router.strategy.RoundRobinSelectStrategy;
 
 public class RedicNode {
 	public static final String NODE_SEPARATOR = ",";

@@ -1,4 +1,4 @@
-package com.robert.redis.redic.excep;
+package com.ten.ware.redis.router.excep;
 
 public class NotSupportedException extends RuntimeException {
 

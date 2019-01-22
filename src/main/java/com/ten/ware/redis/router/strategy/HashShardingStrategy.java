@@ -1,4 +1,4 @@
-package com.robert.redis.redic.strategy;
+package com.ten.ware.redis.router.strategy;
 
 public class HashShardingStrategy implements ShardingStrategy {
 	public <T> int key2node(T key, int nodeCount) {

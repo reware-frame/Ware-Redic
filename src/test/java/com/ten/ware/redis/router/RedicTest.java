@@ -1,4 +1,4 @@
-package com.robert.redis.redic;
+package com.ten.ware.redis.router;
 
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;

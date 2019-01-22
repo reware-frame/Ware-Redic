@@ -3,7 +3,7 @@
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="redic" class="com.robert.redis.redic.Redic" init-method="init">
+	<bean id="redic" class="com.ten.ware.redis.router.Redic" init-method="init">
 		<property name="nodeConnStrs">
 			<list>
 				<value>${redic.cache.node.conn1}</value>

@@ -1,4 +1,4 @@
-package com.robert.redis.redic.strategy;
+package com.ten.ware.redis.router.strategy;
 
 import java.util.concurrent.atomic.AtomicLong;
 
