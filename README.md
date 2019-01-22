@@ -1,4 +1,4 @@
-# REDIC
+# Redic
 
 ## Redic是什么？
 
@@ -33,7 +33,7 @@ Jedis实现的ShardedJedisPool是基于一致性hash实现的，当某个节点�
 - 在Spring环境中配置多节点的Redic Bean。
 
     ```xml
-    <bean id="redic" class="com.robert.redis.redic.Redic" init-method="init">
+    <bean id="redic" class="com.ten.ware.redis.redic.Redic" init-method="init">
         <property name="nodeConnStrs">
             <list>
                 <value>${redic.cache.node.conn1}</value>
@@ -55,7 +55,7 @@ Jedis实现的ShardedJedisPool是基于一致性hash实现的，当某个节点�
 - 在Spring环境中配置多节点的Redic Bean。
 
     ```xml
-    <bean id="redic" class="com.robert.redis.redic.Redic" init-method="init">
+    <bean id="redic" class="com.ten.ware.redis.router.Redic" init-method="init">
         <property name="readWriteSeparate" value=${redic.cache.readWriteSeparate}>
         <property name="nodeConnStrs">
             <list>
@@ -78,10 +78,10 @@ Jedis实现的ShardedJedisPool是基于一致性hash实现的，当某个节点�
 
 ```java
 Redic redic = (Redic) applicationContext.getBean("redic");   
-redic.set("name", "robert");
-AssertJUnit.assertEquals("robert", redic.get("name"));
+redic.set("name", "ten");
+AssertJUnit.assertEquals("ten", redic.get("name"));
 ```
 
-## 联系开发者艳鹏
+### 版权信息
 
-> 微信：robert_lyp
+[@李艳鹏](https://github.com/cloudatee) [redic](https://github.com/cloudatee/redic)
